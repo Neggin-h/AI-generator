@@ -1,6 +1,7 @@
 body {
   background-color: #f9f7fe;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  display: block;
 }
 
 a {
@@ -16,12 +17,12 @@ header {
   margin-bottom: 30px;
 }
 
-h1 {
-  text-align: center;
-  font-weight: 800;
-  font-size: 36px;
-  line-height: 1.5;
-  color: #0f115e;
+.form-container {
+  background-color: white;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  padding: 15px 20px;
 }
 
 form {
@@ -54,6 +55,10 @@ form {
   padding: 14px 24px;
 }
 
+.hidden {
+  display: none;
+}
+
 .poem {
   font-size: 16px;
   background-color: white;
@@ -67,4 +72,25 @@ footer {
   text-align: center;
   font-size: 13px;
   margin-top: 30px;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    margin: 60px auto;
+  }
 }

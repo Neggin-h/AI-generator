@@ -9,7 +9,7 @@
     <title>AI Generator</title>
   </head>
   <body>
-    <main>
+    <div class="container">
       <form id="poem-generator-form">
         <input
           type="text"
@@ -18,11 +18,12 @@
           required
           autocomplete="off"
           class="instructions"
+          id="user-instructions"
         />
         <input type="submit" class="submit-button" />
       </form>
-      <div class="poem" id="poem"></div>
-    </main>
+      <div class="poem hidden" id="poem"></div>
+    </div>
 
     <footer>
       This AI Generator is coded by <strong>Neggin Hariri</strong> and is
