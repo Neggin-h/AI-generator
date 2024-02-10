@@ -3,9 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
     <title>AI Generator</title>
   </head>
   <body>
-    <h1>Hello from generator</h1>
+    <main>
+      <form id="poem-generator-form">
+        <input
+          type="text"
+          placeholder="Enter the topic for a poem"
+          autofocus
+          required
+          autocomplete="off"
+          class="instructions"
+        />
+        <input type="submit" class="submit-button" />
+      </form>
+      <div class="poem" id="poem"></div>
+    </main>
+
+    <footer>
+      This AI Generator is coded by <strong>Neggin Hariri</strong> and is
+      open-sourced on
+      <a href="https://github.com/Neggin-h/AI-generator.git" target="_blank">
+        GitHub</a
+      >
+    </footer>
+
+    <script src="src/AI.js"></script>
   </body>
 </html>
