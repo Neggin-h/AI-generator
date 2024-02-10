@@ -93,4 +93,7 @@ footer {
   .container {
     margin: 60px auto;
   }
+  input::placeholder {
+    font-size: 12px;
+  }
 }
